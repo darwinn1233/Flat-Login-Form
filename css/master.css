@@ -1,0 +1,223 @@
+/* ========== Start Variables ========== */
+:root {
+    --dark-blue-color: #526571;
+    --light-black-color: #00000054;
+}
+/* ========== End Variables ========== */
+
+/* ========== Start Global Rules ========== */
+::-webkit-scrollbar {
+    width: 14px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 117, 255);
+    border-radius: 2px;
+}
+::selection {
+    background-color: #31dcce;
+    color: #333;
+}
+::placeholder {
+    color: var(--dark-blue-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ========== End Global Rules ========== */
+
+/* ========== Start Landing ========== */
+.landing {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #36E6FE;
+    /* display: flex; */
+}
+.landing .container {
+    width: calc(355px * 2);
+    height: 360px;
+    border-radius: 10px;
+    top: 50%;
+    transform:translateY(-50%);
+    position: relative;
+}
+@media (max-width: 767px) {
+    .landing .container {
+        width: 100%;
+        height: 100%;
+        margin-top: -50px;
+        position: absolute;
+    }
+}
+/* Image Block  */
+.landing .container .image-block {
+    background-color: var(--dark-blue-color);
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    width: 50%;
+    left: 0;
+}
+@media (max-width: 767px) {
+    .landing .container .image-block {
+        width: 100%;
+        height: 40%;
+        display: block;
+        position: unset;
+        border-radius: 0;
+    }
+}
+.landing .container .image-block .img img {
+    width: 214.54px;
+    margin: 50px auto 0;
+    display: block;
+}
+.landing .container .image-block .img svg {
+    display: block;
+    margin: 20px auto;
+}
+@media (max-width: 767px) {
+    .landing .container .image-block .img img {
+        width: 162.67px;
+        padding-top: 30px;
+    }
+    .landing .container .image-block .img svg {
+        width: 162.67px;
+    }
+}
+/* Login Block  */
+.landing .container .login-block {
+    background-color: white;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .landing .container .login-block {
+        width: 100%;
+        height: 60%;
+        border-radius: 0;
+        position: unset;
+    }
+} 
+.landing .container .login-block .login {
+    width: 100%;
+    height: 100%;
+    padding: 80px 45px 0;
+}
+@media (max-width: 767px) {
+    .landing .container .login-block .login {
+        padding: 35px 40px 0;
+    }
+}
+.landing .container .login-block .login .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.landing .container .login-block .login .inputs input {
+    width: 100%;
+    height: 30px;
+    color: var(--dark-blue-color);
+    font-size: 17px;
+    font-weight: 600;
+    background: none;
+    border-bottom: var(--dark-blue-color) 2px solid;
+    padding-bottom: 15px;
+}
+/* Button Block */
+.landing .container .login-block .login .button input{
+    width: 100%;
+    height: 35px;
+    background: var(--dark-blue-color);
+    margin-top: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .8s;
+}
+.landing .container .login-block .login .button input:hover {
+    background: #043C60;
+}
+/* Rest-Password Block */
+.landing .container .login-block .login .rest-password h3 {
+    font-size: 15px ;
+    color: #526571;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: start;
+}
+.landing .container .login-block .login .rest-password h3 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    .landing .container .login-block .login .rest-password h3 {
+        text-align: center;
+    }
+}
+/* OR Block */
+.landing .container .login-block .login .OR {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    display: none;
+    color: var(--dark-blue-color);
+}
+.landing .container .login-block .login .OR svg {
+    width: 100%;
+    background: var(--light-black-color);
+}
+@media (max-width: 767px) {
+    .landing .container .login-block .login .OR {
+        display: flex;
+    }
+}
+/* Button 2 Block */
+.landing .container .login-block .login .button-2 input {
+    width: 100%;
+    height: 40px;
+    background: #2ecc71;
+    margin-top: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .8s;
+    display: none;
+}
+.landing .container .login-block .login .button-2 input:hover {
+    background: #27ae60;
+}
+@media (max-width: 767px) {
+    .landing .container .login-block .login .button-2 input {
+        display: block;
+    }
+}
+/* ========== End Landing ========== */
