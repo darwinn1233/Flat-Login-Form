@@ -1,2 +1,2 @@
 # Flat-Login-Form
-Flat Login Form Illustration Using HTML CSS By Darwin
+Flat Login Form Illustration using HTML CSS
